@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Raj Suppliers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/isotope.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	//
+
+
+
+
+
+}); //
+$(window).load(function() {
+	//
+
+	// isotop
+	var $container = $('#isotope-items'),
+		$optionSet = $('#isotope-options'),
+	    $optionSets = $('#isotope-filters'),
+	    $optionLinks = $optionSets.find('a');
+    $container.isotope({
+        filter: '*',
+        layoutMode: 'fitRows'
+    });
+   	$optionLinks.click(function(){
+   		var $this = $(this);
+    	// don't proceed if already selected
+		if ( $this.hasClass('selected') ) {
+			return false;
+		}
+   		$optionSet.find('.selected').removeClass('selected');
+   		$this.addClass('selected');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector
+        });
+      	return false;
+    });
+	$(window).on("resize", function( event ) {
+		$container.isotope('reLayout');
+	});
+
+	// touchTouch
+	$('.thumb-isotope .thumbnail a').touchTouch();
+
+}); //
+</script>
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="not-front">
+<div id="main">
+
+
+
+<div class="top1_wrapper">
+<div class="top1_wrapper2">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top1 clearfix">
+
+<header><div class="logo_wrapper"><a href="index.html" class="logo">Raj Suppliers</a></div></header>
+
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse clearfix">
+<ul class="nav nav_left sf-menu clearfix">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">about us</a></li>
+	<li class="sub-menu sub-menu-1"><a href="#">Products</a>
+		<ul>
+			<li class="sub-menu sub-menu-2"><a href="#">Metal Frames</a>
+					<ul>
+						<li><a href="metalFrame.html">Ceilings</a></li>
+						<li><a href="metalFrame.html">Intermediate</a></li>	
+						<li><a href="metalFrame.html">Partitions</a></li>
+						<li><a href="metalFrame.html">Ceiling Angle</a></li>	
+					</ul>
+			</li>
+			<li class="sub-menu sub-menu-2"><a href="gypsumBag.html">Gypsum Bag</a>
+					<ul>
+						<li><a href="gypsumBag.html">Super Fine</a></li>
+						<li><a href="gypsumBag.html">Fine</a></li>	
+						<li><a href="gypsumBag.html">Stucco</a></li>
+						<li><a href="gypsumBag.html">One Coat</a></li>	
+						<li><a href="gypsumBag.html">Commercial</a></li>
+					</ul>
+			</li>
+			<li class="sub-menu sub-menu-2"><a href="#">Gypsum Boards and Tiles</a>
+					<ul>
+						<li class="sub-menu sub-menu-3"><a href="gbSaintGoabain.html">Saint Goabain</a>
+							<ul>
+								<li><a href="gbSaintGoabain.html">Fireline</a></li>
+								<li><a href="gbSaintGoabain.html">Moisture Resistant</a></li>	
+								<li><a href="gbSaintGoabain.html">Duraline</a></li>
+								<li><a href="gbSaintGoabain.html">Cement Board</a></li>	
+							</ul>
+						</li>
+						<li class="sub-menu sub-menu-3"><a href="gbBoral.html">USG</a>
+							<ul>
+								<li><a href="gbBoral.html">Fireline</a></li>
+								<li><a href="gbBoral.html">Moisture Resistant</a></li>	
+								<li><a href="gbBoral.html">Duraline</a></li>
+								<li><a href="gbBoral.html">Cement Board</a></li>	
+							</ul>
+						</li>
+						
+					</ul>
+			</li>
+			<li class="sub-menu sub-menu-2"><a href="metalAccessories.html">Metal Accessories</a>
+					<ul>
+						<li><a href="metalAccessories.html">Star Screw</a></li>
+						<li><a href="metalAccessories.html">Fastener</a></li>	
+						<li><a href="metalAccessories.html">Clip</a></li>
+						<li><a href="metalAccessories.html">RollTape</a></li>	
+					</ul>
+			</li>	
+			<li class="sub-menu sub-menu-2"><a href="metalTilesAndMineralFiber.html">Metal Tiles & Mineral Fiber Tiles</a>
+					<ul>
+						<li><a href="metalTilesAndMineralFiber.html">Perforated Metal Tiles</a></li>
+						<li><a href="metalTilesAndMineralFiber.html">Mineral Fiber Tiles</a></li>	
+						<li><a href="metalTilesAndMineralFiber.html">Plain Metal Tiles</a></li>
+					</ul>
+			</li>
+		</ul>
+	</li>
+
+</ul>
+
+<ul class="nav nav_right sf-menu clearfix">
+	<li class="sub-menu sub-menu-1"><a href="#">Solutions</a>
+		<ul>
+			<li><a href="residential.html">Residential</a></li>
+			<li><a href="commercial.html">Commercial</a></li>			
+		</ul>
+	</li>
+	<li><a href="services.html">services</a></li>
+
+	<li><a href="contacts.html">contacts</a></li>
+</ul>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="top2_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+
+<div class="top2 clearfix">
+
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="h1_wrapper">
+<div class="">
+<div class="">
+<div class="clearfix">
+<div class="h1_inner">
+<h1>Commercial</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span12">
+
+<div id="isotope-options">
+    <ul id="isotope-filters" class="clearfix">
+        <li><a href="#" class="selected" data-filter="*">Show All</a></li>
+        <li><a href="#" data-filter=".isotope-filter1">Office</a></li>
+        <li><a href="#" data-filter=".isotope-filter2">Helthcare</a></li>
+        <li><a href="#" data-filter=".isotope-filter3">Hotels</a></li>
+        <li><a href="#" data-filter=".isotope-filter4">Retail Solution</a></li>
+    </ul>
+</div>
+
+<ul class="thumbnails" id="isotope-items">
+    <li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO01.jpg">
+					<figure>
+						<img src="images/CO01.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO01
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO02.jpg">
+					<figure>
+						<img src="images/CO02.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO02
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+<li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO03.jpg">
+					<figure>
+						<img src="images/CO03.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO03
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO04.jpg">
+					<figure>
+						<img src="images/CO04.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO04
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO05.jpg">
+					<figure>
+						<img src="images/CO05.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO05
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO06.jpg">
+					<figure>
+						<img src="images/CO06.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO06
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO07.jpg">
+					<figure>
+						<img src="images/CO07.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO07
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter1">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CO08.jpg">
+					<figure>
+						<img src="images/CO08.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Office Design No:CO08
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH01.jpg">
+					<figure>
+						<img src="images/CH01.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH01
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+        <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH02.jpg">
+					<figure>
+						<img src="images/CH02.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH02
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+        <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH03.jpg">
+					<figure>
+						<img src="images/CH03.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH03
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+        <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH04.jpg">
+					<figure>
+						<img src="images/CH04.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH04
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+        <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH05.jpg">
+					<figure>
+						<img src="images/CH05.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH05
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+        <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH06.jpg">
+					<figure>
+						<img src="images/CH06.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH06
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+        <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH07.jpg">
+					<figure>
+						<img src="images/CH07.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH07
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+        <li class="span3 isotope-element isotope-filter2">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CH08.jpg">
+					<figure>
+						<img src="images/CH08.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Helthcare Design No:CH08
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT01.jpg">
+					<figure>
+						<img src="images/CHT01.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT01
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+<li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT02.jpg">
+					<figure>
+						<img src="images/CHT02.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT02
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT03.jpg">
+					<figure>
+						<img src="images/CHT03.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT03
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT04.jpg">
+					<figure>
+						<img src="images/CHT04.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT04
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT05.jpg">
+					<figure>
+						<img src="images/CHT05.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT05
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT06.jpg">
+					<figure>
+						<img src="images/CHT06.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT06
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT07.jpg">
+					<figure>
+						<img src="images/CHT07.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT07
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter3">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CHT08.jpg">
+					<figure>
+						<img src="images/CHT08.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Hotel Design No:CHT08
+					</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR01.jpg">
+					<figure>
+						<img src="images/CR01.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR01	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR02.jpg">
+					<figure>
+						<img src="images/CR02.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR02	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR03.jpg">
+					<figure>
+						<img src="images/CR03.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR03	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR04.jpg">
+					<figure>
+						<img src="images/CR04.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR04	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR05.jpg">
+					<figure>
+						<img src="images/CR05.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR05	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR06.jpg">
+					<figure>
+						<img src="images/CR06.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR06	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR07.jpg">
+					<figure>
+						<img src="images/CR07.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR07	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+    <li class="span3 isotope-element isotope-filter4">
+		<div class="thumb-isotope">
+			<div class="thumbnail clearfix">
+				<a href="images/CR08.jpg">
+					<figure>
+						<img src="images/CR08.jpg" alt=""><em></em>
+					</figure>
+					<div class="caption">
+						Retail Solution Design No:CR08	</div>
+				</a>
+			</div>
+		</div>
+    </li>
+
+</ul>
+
+
+
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+<!-- design copyright link, do not delete -->
+<div id="copyright">Website Development by <a href="http://www.kingsoftsolution.com"class="mylink" rel="nofollow">Kingsoft Solution</a></div>
+<!-- end copyright link -->
+
+<div class="bot2_wrapper">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="bot2">
+<div class="row">
+
+<div class="span7 block2">
+<div class="phone1">RAJ SUPPLIERS</div>
+
+<div class="social_wrapper">
+	<ul class="social clearfix">
+	    <li><a href="www.twitter.com"><img src="images/social_ic1.png"></a></li>
+	    <li><a href="http://digg.com"><img src="images/social_ic2.png"></a></li>
+	    <li><a href="https://www.facebook.com"><img src="images/social_ic3.png"></a></li>
+	    <li><a href="https://www.linkedin.com"><img src="images/social_ic4.png"></a></li>
+	    <li><a href="http://feeds2.feedburner.com/SmallBusinessTrends"><img src="images/social_ic5.png"></a></li>
+	</ul>
+</div>
+
+</div>
+<div class="span3 block3">
+<div class="bot2_title">Our Address</div>
+<div class="adress1">
+                   Ektanagar,Near Trimurti Washing Center,<br>
+                   Pune-Nashik Highway,Chakan,<br>
+                   Tal-khed,Dist-Pune 410501
+                    Phone: +91 9324595252<br>
+                    Phone: +91 9920275266<br>
+                    E-mail: <a href="#">info@rajgypsumsuppliers.com</a>
+</div>
+</div>
+</div>
+</div>
+<footer>Copyright  &copy; 2016. All rights reserved.<br /> RAJ SUPPLIERS</footer>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
